@@ -1,0 +1,17 @@
+<%
+
+person1 = {:first=>"Josh", :last=>"Franz"}
+person2 = {:first=>"Alicia", :last=>"franz"}
+person3 = {:first=>"Rayna", :last=>"franZ"}
+
+params = {:father=>person1, :mother=>person2, :daughter=>person3}
+
+%>
+<br /><br /><br />
+<h1>
+	Father: <%= params[:father][:first] %> <%= params[:father][:last] %><br />
+	Mother: <%= params[:mother][:first] %> <%= params[:mother][:last] %><br />
+	Daughter: <%= params[:daughter][:first] %> <%= params[:daughter][:last] %><br />
+	<br /><br />
+	<%= "thisthatthemthine".string_shuffle %>
+</h1>

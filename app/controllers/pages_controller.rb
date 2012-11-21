@@ -1,21 +1,29 @@
 class PagesController < ApplicationController
 
   def home
-    @title_standard = "Ruby on Rails Tutorial Sample App | "
-	@title_personal = "Thank you for visiting | "
-  
-  
-	@title_start = @title_standard
-	@title = "Home"
+	#@title_extend = "standard"
+	#@title = "Home"
   end
 
   def contact
-	@title_start = @title_personal
-	@title = "Contact"
+	@title_extend = "personal"
+	#@title = "Contact"
   end
   
   def about
-	@title_start = @title_standard
+	@title_extend = "standard"
 	@title = "About"
   end
+  
+  def test
+	@title_extend = "personal"
+	@title = "Testing out some Functions!"
+  end
+end
+
+
+class String
+	def string_shuffle
+		self.split('').shuffle.join
+	end
 end
